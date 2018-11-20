@@ -1,4 +1,4 @@
-package br.com.alura.gerenciador.servlet;
+package br.com.alura.gerenciador.modelo;
 
 import java.util.Date;
 
@@ -28,5 +28,15 @@ public class Empresa {
 	
 	public void setDataAbertura(Date dataAbertura) {
 		this.dataAbertura = dataAbertura;
+	}
+	
+	public boolean equals(Empresa e) {
+		return this.getId() == e.getId();
+	}
+	
+	public void copy(Empresa empresa) {
+		this.setId(empresa.getId());
+		this.setNome(empresa.getNome());
+		this.setDataAbertura(empresa.getDataAbertura());
 	}
 }
