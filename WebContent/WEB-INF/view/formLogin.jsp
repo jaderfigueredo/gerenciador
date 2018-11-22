@@ -13,6 +13,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	
 	<form action="${ linkServletNovaEmpresa }" method="post" >
 		Login: <input type="text" name="login" value="" />
 		Senha: <input type="password" name="senha" value="" />
